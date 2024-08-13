@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { logoutUser } from "../app/features/authSlice";
 
 const navigation = [
-  { name: "Dashboard", href: "/dashboard" },
   { name: "Booking Calendar", href: "/booking-calendar" },
   { name: "Booking List", href: "/booking-list" },
   { name: "New Booking", href: "/new-booking" },

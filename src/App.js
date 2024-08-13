@@ -13,7 +13,6 @@ import { persistor } from "./app/store";
 import PrivateRoute from "./components/PrivateRoute"; // Ensure this path is correct
 import BookingCalendar from "./pages/BookingCalander";
 import BookingList from "./pages/BookingList";
-import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import NewBooking from "./pages/NewBooking";
 import User from "./pages/User";
@@ -42,16 +41,6 @@ function App() {
               )
             }
           />
-
-          <Route
-            path="/dashboard"
-            element={
-              <PrivateRoute isAuthenticated={isAuthenticated}>
-                <Dashboard />
-              </PrivateRoute>
-            }
-          />
-
           <Route
             path="/booking-calendar"
             element={
@@ -76,14 +65,6 @@ function App() {
               </PrivateRoute>
             }
           />
-          {/* <Route
-            path="/rooms"
-            element={
-              <PrivateRoute isAuthenticated={isAuthenticated}>
-                <Rooms />
-              </PrivateRoute>
-            }
-          /> */}
           <Route
             path="/rooms"
             element={

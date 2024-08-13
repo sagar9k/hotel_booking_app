@@ -18,7 +18,7 @@ const Login = () => {
       .unwrap()
       .then(() => {
         console.log("Login successful, navigating to dashboard...");
-        navigate("/dashboard");
+        navigate("/booking-calendar");
       })
       .catch((err) => {
         console.error("Login failed:", err);
@@ -90,10 +90,7 @@ const Login = () => {
             {status === "loading" ? "Signing in..." : "Sign in"}
           </button>
           <div className="text-sm">
-            <a
-              href="#"
-              className="font-semibold text-indigo-600 hover:text-indigo-500"
-            >
+            <a href="" className="font-semibold text-indigo-600 hover:text-indigo-500">
               Forgot password?
             </a>
           </div>
